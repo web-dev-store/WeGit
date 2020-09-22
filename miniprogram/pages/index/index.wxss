@@ -1,0 +1,96 @@
+/**index.wxss**/
+.head-view {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1
+}
+
+.select-right {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  width: 300rpx;
+  justify-content: space-between
+}
+
+.select-repo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select {
+  font-size: 30rpx;
+  color: #0387FE;
+  font-weight: bold;
+}
+
+.unselect {
+  font-size: 30rpx;
+  color: #1c2438;
+  font-weight: bold;
+}
+
+.bottom-line {
+  height: 5rpx;
+  width: 30rpx;
+  background: #0387FE;
+  margin-top: 10rpx;
+}
+
+.item-view {
+  margin-top: 80rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f9;
+  margin: 15rpx 30rpx;
+  border-radius: 9rpx;
+  padding: 20rpx;
+}
+
+.item-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-datainfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 18rpx;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 18rpx;
+}
+
+.bottom-button {
+  position: fixed;
+  bottom: 50rpx;
+  background: #0387FE;
+  height: 40rpx;
+  padding: 15rpx;
+  border-radius: 40rpx;
+  color: white;
+  margin: 0 auto;
+  left: 35%;
+  width: 180rpx;
+  text-align: center;
+}

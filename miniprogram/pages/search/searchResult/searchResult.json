@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Search",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "component-item": "../../../components/item/item"
+  }
+}

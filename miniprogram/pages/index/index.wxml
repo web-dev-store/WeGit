@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <block wx:for="{{array}}" wx:key="key">
+      <view bindtap="toRepoDetail" data-author="{{item.author}}" data-name="{{item.name}}">
+        <component-item repo="{{item.author + '/' + item.name}}" avatar="{{item.avatar}}" color="{{item.languageColor}}"
+          desc="{{item.description}}" lang="{{item.language}}" stars="{{item.stars}}" forks="{{item.forks}}"
+          added_stars="{{item.currentPeriodStars}}" since="{{since}}"></component-item>
+      </view>
+    </block>
+  </view>
+</view>

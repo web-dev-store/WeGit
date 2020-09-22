@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/search/searchResult/searchResult",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "WeGit",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Trending",
+        "iconPath": "/images/untrending.png",
+        "selectedIconPath": "/images/trending.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "Search",
+        "iconPath": "/images/unsearch.png",
+        "selectedIconPath": "/images/search.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "Me",
+        "iconPath": "/images/unme.png",
+        "selectedIconPath": "/images/me.png"
+      }
+    ]
+  }
+}

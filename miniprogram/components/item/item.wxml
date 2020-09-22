@@ -1,0 +1,32 @@
+<!--component/item/item.wxml-->
+<view class="item" bindtap="toRepoDetail" data-repo="{{repo_link}}">
+  <view class="item-head">
+    <view>
+      <van-image style="display: flex" width="25" height="25" src="{{avatar}}" fit="cover" lazy-load />
+    </view>
+    <view class="item-title">
+      {{repo}}
+    </view>
+  </view>
+  <view class="item-desc">{{desc}}</view>
+  <view class="item-datainfo">
+    <view class="lang">
+      <van-icon name="smile" size="15px" color="{{color}}" />
+      <view class="item-datainfo-text">{{lang !== '' ? lang : 'No Language'}}</view>
+    </view>
+    <view class="lang">
+      <van-icon name="star" size="15px" color="#e8ba0e" />
+      <view class="item-datainfo-text">{{stars}}</view>
+    </view>
+    <view class="lang">
+      <van-icon name="cluster" size="15px" color="#e8ba0e" />
+      <view class="item-datainfo-text">{{forks}}</view>
+    </view>
+    <view class="lang" wx:if="{{added_stars}}">
+      <van-icon name="fire" size="15px" color="#ed3f14" />
+      <view class="item-datainfo-text">
+        {{added_stars !== '' ? added_stars + ' ' + since : 'unkown'}}
+      </view>
+    </view>
+  </view>
+</view>

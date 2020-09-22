@@ -1,0 +1,18 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view>
+  <van-search value="{{value}}" placeholder="please enter keyboards" bind:search="onSearch" />
+</view>
+<view class="search-history">
+  <view style="color: #80848f;font-size: 26rpx">
+    Search Histroy
+  </view>
+  <view class="search-right">
+    <van-icon name="delete" />
+    <view style="color: #80848f;font-size: 26rpx;" bindtap="deleteAll">Delete All</view>
+  </view>
+</view>
+<view class="history-view">
+  <block wx:for="{{history}}" wx:key="key">
+    <view class="history-key" bindtap="singleClick" bindlongtap="longTap" data-key="{{item}}">{{item}}</view>
+  </block>
+</view>

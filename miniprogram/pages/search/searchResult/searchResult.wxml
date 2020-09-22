@@ -1,0 +1,12 @@
+<!--pages/search/searchResult/searchResult.wxml-->
+<view class="container-view">
+  <view class="item-view">
+    <block wx:for="{{array}}">
+      <view bindtap="toRepoDetail" data-repo="{{item.full_name}}">
+        <component-item repo="{{item.full_name}}" avatar="{{item.owner.avatar_url}}" color="#1c2438"
+          desc="{{item.description}}" lang="{{item.language}}" stars="{{item.stargazers_count}}" forks="{{item.forks}}">
+        </component-item>
+      </view>
+    </block>
+  </view>
+</view>

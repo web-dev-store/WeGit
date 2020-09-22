@@ -1,0 +1,51 @@
+/* component/item/item.wxss */
+.item {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f9;
+  margin: 15rpx 30rpx;
+  border-radius: 9rpx;
+  padding: 20rpx;
+}
+
+.item-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-title {
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  color: #495060;
+  margin-left: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-desc {
+  font-size: 26rpx;
+  color: #80848f;
+  padding: 15rpx 0rpx;
+}
+
+.item-datainfo {
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 0rpx;
+}
+
+.item-datainfo-text {
+  font-size: 20rpx;
+  color: #80848f;
+  margin-left: 8rpx;
+  height: 15px;
+  line-height: 15px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+}
